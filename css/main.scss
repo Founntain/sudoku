@@ -1,0 +1,116 @@
+html, body{
+    background-color: #21252B;
+    color: white;
+}
+
+.gameGrid, .inputGrid, .settingsGrid{
+    margin: auto;
+}
+
+.gameGrid{
+    margin-top: 60px;
+    padding: 5px;
+    max-width: 243px;
+}
+
+.settingsGrid{
+    input{
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        color: white;
+        border:none;
+        margin: 5px;
+        width: 100%;
+        border-bottom: 3px solid #fc2;
+        text-align: center;
+        font-weight: bold;
+        font-size: 12pt;
+        outline: none;
+    }
+}
+
+.cell{
+    background-color: #333842;
+    box-shadow:inset 0px 0px 0px 1px rgba($color: #000000, $alpha: 0.2);
+    text-align: center;
+    display: table-cell;
+    line-height: auto;
+    font-size: 12pt;
+    padding: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.generatedCell{
+    cursor: default;
+    font-weight: bold;
+    user-select: none;
+}
+
+.inputButton{
+    background-color: transparent;
+    box-shadow:inset 0px 0px 0px 2px black;
+    margin: 3px;
+    text-align: center;
+    display: table-cell;
+    line-height: auto;
+    font-weight: bold;
+    font-size: 12pt;
+    padding: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.noValue{
+    color: transparent;
+}
+
+.selectedInput{
+    box-shadow:inset 0px 0px 0px 2px #fc2;
+}
+
+.borderTop{
+    border-top: 3px solid black;
+}
+
+.borderBottom{
+    border-bottom: 3px solid black;
+}
+
+.borderLeft{
+    border-left: 3px solid black;
+}
+
+.borderRight{
+    border-Right: 3px solid black;
+}
+
+.colMax{
+    max-width: 27px;
+}
+
+.comboBoxStyle{
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    color: white;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #fc2;
+    width: 100%;
+    height: 30px;
+}
+
+.header{
+    color: black;
+    position: absolute;
+    padding: 0 10px;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background-color: #fc2;
+    line-height: 45px;
+    display: table-cell;
+
+    #sudokuInfo{
+        float: right;
+    }
+}
